@@ -1,0 +1,224 @@
+/*
+*{
+    margin: 0;
+    padding: 0;
+}
+*/
+body{
+   background-color: rgb(158, 154, 154);
+   color: rgba(1, 0, 2, 0.932) ;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   font-weight: normal;
+
+   /* esta es otra forma de hacerlo, abreviada*/
+   font: normal 16px Arial, Helvetica, sans-serif;
+
+   line-height: 1,6em;
+   margin: 0;
+}
+
+/* text-decoration: none le saca el underline a los links hipervinculos */
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* a:hover es cuando ponés el cursor en el hipervínculo sin hacrele click para que cambie de color y a:active es cuando abris un hipervínculo y cambia de color*/
+
+a:hover{
+    color: fuchsia;
+}
+
+a:active{
+    color: gold;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/*.my-form input[type="submit" escrito asi o como abajo .button es el submit]*/
+.button{
+    background-color: thistle;
+    color: black;
+    padding: 10px 15px;
+    border-style: double;
+    border-color: blue;
+}
+
+.button:hover{
+    background-color: red;
+    color: seagreen;
+}
+
+.clr{
+    clear: both;
+}
+
+.box-1{
+    background-color: #333;
+    color: crimson;
+
+    border-right: 5px rebeccapurple solid;
+    border-left: 5px rebeccapurple solid;
+    border-top: 5px rebeccapurple solid;
+    border-bottom: 5px rebeccapurple solid;
+
+    border-width: 5px;
+    border-style: solid;
+    padding: 10px;
+    margin: 50px 0;
+
+    /*esta es otra forma de hacerlo abreviado*/
+    border: 5px rebeccapurple solid;
+    
+   }
+
+.box-1 h1{
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    color: lawngreen;
+}
+
+.buttonHolder1{
+    text-align: center;
+}
+
+.box-2{
+    background-color: #333;
+    border: 5px cornflowerblue solid;
+    padding:20px;
+    margin: 20px 0;
+}
+
+.box-2 h1{
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: initial;
+    text-transform: capitalize;
+    text-align: center;
+    color: lightgreen;
+}
+
+.categories{
+    border:5px saddlebrown solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+    text-decoration: underline;
+    color: forestgreen;
+    font-family: cursive;
+}
+
+.categories li{
+    padding-bottom: 6px;    
+    border-bottom: dotted 1px yellow;
+    list-style-image: url('../images/checklist.jpg');
+}
+
+.my-form{
+    padding:20px; 
+}
+
+.my-form .form-group{
+    padding-bottom:15px;
+}
+/* lo de arriba es para separar las oraciones formularios entre si c el padding*/
+
+.my-form label{
+    display:block;
+}
+/* lo de arriba es para que queden en renglones diferentes en titulo y la cajota para completar*/
+
+.my-form input[type="text"], .my-form textarea{
+    padding:8px;
+    width: 100%;
+}
+/* el type text de arriba es para que el padding y width aplique a los type text y al textarea y no al input type submit*/
+
+.buttonHolder2{
+    text-align: right;
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid black;
+    padding:10px;
+    box-sizing: border-box;
+}
+/*box-sizing: border-box es para que se ajuste a la página y no queden 2 arriba y uno abajo en vez de en 3 columnas. flexbox deja más bonito todo*/
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing:border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color:#fff;
+    padding: 15px;
+    box-sizing:border-box;
+}
+
+.p-box{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url(../images/bp.jpeg);
+    background-position: center center;
+    box-sizing: border-box;
+    margin: auto;
+    }
+
+
+.p-box h1{
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+}
+  
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+.my-list li:first-child{
+    background-color: red;
+}
+
+.my-list li:last-child{
+    background-color: rebeccapurple;
+}
+
+.my-list li:nth-child(even){
+    background: salmon;
+}
+
+.my-list li:nth-child(3){
+    background: seagreen;
+}
+
+/* position fixed hace que el botón se mantenga a tantos pixeles del top siempre aunque scrolees*/
